@@ -1,6 +1,6 @@
 = Bootstrap Kaminari Views
 
-Basic Gem for quick default inclusion of {Kaminari}[https://github.com/amatsuda/kaminari] theme compatible with {Twitter Bootstrap 2.0}[https://twitter.github.com/bootstrap]
+Basic Gem for quick default inclusion of {Kaminari}[https://github.com/amatsuda/kaminari] theme compatible with {Twitter Bootstrap 2.0}[http://twitter.github.com/bootstrap]
 
 = Usage
 
