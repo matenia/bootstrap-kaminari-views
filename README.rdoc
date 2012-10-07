@@ -18,3 +18,4 @@ Render Pagination with a theme
 {Kaminari}[https://github.com/amatsuda/kaminari] - For making an awesome gem
 
 {twitter-bootstrap-kaminari-views}[https://github.com/gabetax/twitter-bootstrap-kaminari-views] - Non Gemified Implementation
+
