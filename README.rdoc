@@ -13,6 +13,11 @@ Render Pagination with a theme
 
     = paginate @posts, :theme => 'twitter-bootstrap'
 
+Render with specific pagination classes
+
+    = paginate @posts, :theme => 'twitter-bootstrap', 
+                       :pagination_class => "pagination-small pagination-centered"
+
 = Credits
 
 {Kaminari}[https://github.com/amatsuda/kaminari] - For making an awesome gem
