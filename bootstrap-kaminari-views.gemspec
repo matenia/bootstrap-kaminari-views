@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["matenia@gmail.com"]
   s.homepage    = "http://github.com/matenia/bootstrap-kaminari-views"
   s.summary     = "Bootstrap-ify pagination with Kaminari"
-  s.description = "Bootstrap-ify pagination with Kaminari - Compatible with Bootstrap 2.x"
+  s.description = "Bootstrap-ify pagination with Kaminari - Compatible with Bootstrap 2.x, 3.x"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
