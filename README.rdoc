@@ -27,6 +27,22 @@ Render with specific pagination classes
     = paginate @posts, :theme => 'twitter-bootstrap',
                        :pagination_class => "pagination-small pagination-centered"
 
+== Default Options
+
+If you want to use one or more options as the default across your app, you can override the helper method in your +application_helper.rb+ file:
+
+
+  module ApplicationHelper
+    
+    def paginate objects, options = {}
+      options.reverse_merge!( theme: 'twitter-bootstrap' )
+
+      super( objects, options )
+    end
+    
+  end
+
+
 = Credits
 
 {Kaminari}[https://github.com/amatsuda/kaminari] - For making an awesome gem
