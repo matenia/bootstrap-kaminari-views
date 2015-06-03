@@ -7,16 +7,14 @@ require "dvl-kaminari-views/version"
 Gem::Specification.new do |s|
   s.name        = "dvl-kaminari-views"
   s.version     = DvlKaminariViews::VERSION
-  s.authors     = ["Matenia Rossides"]
-  s.email       = ["matenia@gmail.com"]
-  s.homepage    = "http://github.com/matenia/dvl-kaminari-views"
-  s.summary     = "Bootstrap-ify pagination with Kaminari"
-  s.description = "Bootstrap-ify pagination with Kaminari - Compatible with Bootstrap 2.x, 3.x"
+  s.authors     = ["Adam Becker"]
+  s.email       = ["adam@dobt.co"]
+  s.homepage    = "http://github.com/dobtco/dvl-kaminari-views"
+  s.summary     = "Integrates Kaminari and dvl-core."
+  s.description = "Integrates Kaminari and dvl-core."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.license = 'MIT'
+  s.files = `git ls-files`.split("\n")
 
-  s.add_dependency "rails", ">= 3.1"
   s.add_dependency "kaminari", ">= 0.13"
-
-  s.add_development_dependency "sqlite3"
 end
