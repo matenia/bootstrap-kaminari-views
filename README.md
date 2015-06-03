@@ -1,4 +1,4 @@
-## DVL Kaminari Views
+## Dvl Kaminari Views
 
 Integrates Kaminari and [dvl-core](https://github.com/dobtco/dvl-core).
 
@@ -8,9 +8,6 @@ Integrates Kaminari and [dvl-core](https://github.com/dobtco/dvl-core).
 # Gemfile
 gem 'kaminari'
 gem 'dvl-kaminari-views'
-
-# In your views...
-paginate @posts, theme: 'dvl'
 ```
 
 ### License
