@@ -1,15 +1,15 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "bootstrap-kaminari-views/version"
+require "dvl-kaminari-views/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "bootstrap-kaminari-views"
-  s.version     = BootstrapKaminariViews::VERSION
+  s.name        = "dvl-kaminari-views"
+  s.version     = DvlKaminariViews::VERSION
   s.authors     = ["Matenia Rossides"]
   s.email       = ["matenia@gmail.com"]
-  s.homepage    = "http://github.com/matenia/bootstrap-kaminari-views"
+  s.homepage    = "http://github.com/matenia/dvl-kaminari-views"
   s.summary     = "Bootstrap-ify pagination with Kaminari"
   s.description = "Bootstrap-ify pagination with Kaminari - Compatible with Bootstrap 2.x, 3.x"
 

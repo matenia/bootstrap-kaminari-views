@@ -1,0 +1,7 @@
+<% if current_page.last? %>
+  <span>&rsaquo;</span>
+<% else %>
+  <li>
+    <%= link_to '&rsaquo;'.html_safe, url, :rel => 'next', :remote => remote %>
+  </li>
+<% end %>
