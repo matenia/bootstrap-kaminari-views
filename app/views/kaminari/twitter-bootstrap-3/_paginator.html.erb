@@ -9,25 +9,21 @@
 <%- pagination_class ||= '' %>
 <%- centered ||= pagination_class.split(" ").include?("pagination-centered") %>
 <%= paginator.render do -%>
-<nav>
-  <% if centered %>
-    <div class="text-center">
-  <% end %>
-      <ul class="pagination <%= pagination_class %>">
-        <%= first_page_tag unless current_page.first? %>
-        <%= prev_page_tag unless current_page.first? %>
-        <% each_page do |page| -%>
-          <% if page.left_outer? || page.right_outer? || page.inside_window? -%>
-            <%= page_tag page %>
-          <% elsif !page.was_truncated? -%>
-            <%= gap_tag %>
-          <% end -%>
+<% if centered %> <div class="text-center"> <% end %>
+  <nav>
+    <ul class="pagination <%= pagination_class %>">
+      <%= first_page_tag unless current_page.first? %>
+      <%= prev_page_tag unless current_page.first? %>
+      <% each_page do |page| -%>
+        <% if page.left_outer? || page.right_outer? || page.inside_window? -%>
+          <%= page_tag page %>
+        <% elsif !page.was_truncated? -%>
+          <%= gap_tag %>
         <% end -%>
-        <%= next_page_tag unless current_page.last? %>
-        <%= last_page_tag unless current_page.last? %>
-      </ul>
-  <% if centered %>
-    <div> <!-- text-center -->
-  <% end %>
-</nav>
+      <% end -%>
+      <%= next_page_tag unless current_page.last? %>
+      <%= last_page_tag unless current_page.last? %>
+    </ul>
+  </nav>
+<% if centered %> <div> <!-- text-center --> <% end %>
 <% end -%>
