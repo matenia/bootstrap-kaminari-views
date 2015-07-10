@@ -1,7 +1,7 @@
 <% if current_page.first? %>
-  <li><span>&lsaquo;</span></li>
+  <li><span>&larr;</span></li>
 <% else %>
   <li>
-    <%= link_to '&lsaquo;'.html_safe, url, :rel => 'prev', :remote => remote %>
+    <%= link_to '&larr;'.html_safe, url, :rel => 'prev', :remote => remote %>
   </li>
 <% end %>

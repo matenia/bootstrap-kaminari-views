@@ -1,7 +1,7 @@
 <% if current_page.last? %>
-  <li><span>&rsaquo;</span></li>
+  <li><span>&rarr;</span></li>
 <% else %>
   <li>
-    <%= link_to '&rsaquo;'.html_safe, url, :rel => 'next', :remote => remote %>
+    <%= link_to '&rarr;'.html_safe, url, :rel => 'next', :remote => remote %>
   </li>
 <% end %>
