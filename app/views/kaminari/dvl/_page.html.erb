@@ -1,0 +1,9 @@
+<% if page.current? %>
+  <li class='active'>
+    <span><%= page %></span>
+  </li>
+<% else %>
+  <li>
+    <%= link_to page, url, opts = {:remote => remote, :rel => page.next? ? 'next' : page.prev? ? 'prev' : nil} %>
+  </li>
+<% end %>
