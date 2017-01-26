@@ -2,7 +2,7 @@
 
 {<img src="https://badge.fury.io/rb/bootstrap-kaminari-views.svg" alt="Gem Version" />}[http://badge.fury.io/rb/bootstrap-kaminari-views]
 
-Basic Gem for quick default inclusion of {Kaminari}[https://github.com/amatsuda/kaminari] theme compatible with {Twitter Bootstrap 2.0}[http://getbootstrap.com/2.3.2/] and {Twitter Bootstrap 3.0}[http://getbootstrap.com]
+Basic Gem for quick default inclusion of {Kaminari}[https://github.com/amatsuda/kaminari] theme compatible with {Twitter Bootstrap 2.0}[http://getbootstrap.com/2.3.2/], {Twitter Bootstrap 3.0}[http://getbootstrap.com] and {Twitter Bootstrap 4.0}[https://v4-alpha.getbootstrap.com]
 
 = Usage
 
@@ -16,6 +16,8 @@ Render Pagination with a theme
     = paginate @posts, :theme => 'twitter-bootstrap'
 
     = paginate @posts, :theme => 'twitter-bootstrap-3'
+
+    = paginate @posts, :theme => 'twitter-bootstrap-4'
 
 Render with specific pagination classes
 
@@ -33,13 +35,13 @@ If you want to use one or more options as the default across your app, you can o
 
 
   module ApplicationHelper
-    
+
     def paginate objects, options = {}
       options.reverse_merge!( theme: 'twitter-bootstrap' )
 
       super( objects, options )
     end
-    
+
   end
 
 
